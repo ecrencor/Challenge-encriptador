@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripta textos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <main>
+        <section class="logo">
+            <img src="./img/Logo.svg" alt="logo de alura">
+        </section>
+
+        <section class="mensaje"> 
+            <div class="contenido">
+                <textarea class="text-area"cols="30" rows="10"  placeholder="Ingrese texto aquí"></textarea> 
+                <div class="info">
+                    <p class="iconify"><img src="./img/Vector.svg" alt=""> Solo se permiten letras minusculas sin acento.</p>
+                    <div class="botones">
+                        <button class="encriptar"onclick="botonEncriptar()">Encriptar</button>
+                        <button class="desencriptar"onclick="botonDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>        
+        </section>
+           
+        <section class="resultadoMensaje">                
+            <div class="resultado"> 
+                <div class="noEncontrado">                    
+                    <textarea class="msn" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
+                    <button class="copiar"onclick="botonCopiar()" >Copiar</button>                           
+                </div> 
+
+                <div class="encontradoMensaje">
+                    <img src="./img/Muñeco.svg" id="muneco" alt="No encontrado">
+                    <div class="lorem">
+                        <h3>Ningún mensaje fue encontrado</h3>
+                        <p>Ingresa el texto que desea encriptar ó desencriptar</p>
+                    </div>                   
+                </div>                
+            </div>
+        </section>
+           
+           
+    </main>
+    <footer>
+        <div class="banner">
+            <p class="copyright">&copy Copyright Derechos Reservados  </p>
+            <p class="propietario">Realizado por: Carlos Sanchez Zambrano - Challenge Encriptador Alura - Oracle One, Next Education.</p>
+        </div>        
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
